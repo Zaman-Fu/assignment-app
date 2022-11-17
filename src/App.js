@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import NewUserForm from './components/NewUserForm';
+import DeleteUserForm from './components/DeleteUserForm';
+import UpdateUserForm from './components/UpdateUserForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+          <div className="op-container">
+              <NewUserForm></NewUserForm>
+              <DeleteUserForm></DeleteUserForm>
+              <UpdateUserForm></UpdateUserForm>
+              
+
+          </div>
+          <div className = "display-container"></div>
+      
     </div>
   );
 }
